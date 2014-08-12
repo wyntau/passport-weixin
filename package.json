@@ -1,0 +1,29 @@
+{
+  "name": "passport-weixin",
+  "version": "0.0.1",
+  "description": "passport oauth2 strategy for weixin",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "passport",
+    "weixin",
+    "oauth2",
+    "strategy"
+  ],
+  "author": "Treri",
+  "license": "MIT",
+  "dependencies": {
+    "passport-oauth2": "^1.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Treri/passport-weixin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Treri/passport-weixin/issues"
+  },
+  "homepage": "https://github.com/Treri/passport-weixin"
+}
