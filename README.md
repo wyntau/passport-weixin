@@ -16,6 +16,7 @@ passport oauth2 strategy for weixin
       , clientSecret: 'CLIENT SECRET'
       , callbackURL: 'CALLBACK URL'
       , requireState: false
+      , scope: 'snsapi_login'
     }, function(accessToken, refreshToken, profile, done){
       done(null, profile);
     }));
