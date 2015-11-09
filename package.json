@@ -1,6 +1,6 @@
 {
   "name": "passport-weixin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "passport oauth2 strategy for weixin",
   "main": "./lib",
   "scripts": {
