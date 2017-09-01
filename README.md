@@ -1,5 +1,5 @@
 ## passport-weixin
-passport oauth2 strategy for weixin
+passport oauth2 strategy for weixin and weapp
 
 ### Install
 
@@ -55,5 +55,27 @@ passport.use('loginByWeixinClient',new WeixinStrategy({
             failureRedirect: '/login' })
     );
 ```
+
+### Weapp 微信小程序
+
+#### 配置
+test/bootstrap/providers.json
+```json
+...
+    "clientID": "替换为自己的小程序AppID",
+    "clientSecret": "替换为自己的小程序AppSecret",
+...
+```
+
+#### 启动测试服务
+```bash
+# npm install
+# npm start
+```
+
+#### HTTPS
+由于小程序只支持HTTPS，需要将weapp passport server放在某HTTPS的反向代理后面才可以。类似下面2种途径
+- `brew install nginx` and config ...
+- `docker run -v ${PWD}/nginx/conf.d:/etc/nginx/conf.d -v ${PWD}/nginx/certs:/etc/nginx/certs -d -p 443:443 nginx`
 
 ### License

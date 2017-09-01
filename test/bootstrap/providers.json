@@ -1,0 +1,13 @@
+{
+  "weapp": {
+    "provider": "weixin",
+    "clientID": "replace by ur weapp_appid",
+    "clientSecret": "replace by ur weapp_secret",
+    "requireState": false,
+    "authorizationURL": "https://api.weixin.qq.com/sns/jscode2session",
+    "session": false,
+    "scope": "weapp_login",
+    "successRedirect": "/auth/account",
+    "failureFlash": true
+  }
+}
