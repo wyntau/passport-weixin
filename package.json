@@ -4,7 +4,7 @@
   "description": "passport oauth2 strategy for weixin",
   "main": "./lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node test/bootstrap"
   },
   "keywords": [
     "passport",
@@ -15,9 +15,13 @@
   "author": "Treri",
   "license": "MIT",
   "dependencies": {
-    "passport-oauth2": "^1.1.2"
+    "passport-oauth2": "^1.1.2",
+    "superagent": "^3.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "express": "^4.15.4",
+    "passport": "^0.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Treri/passport-weixin.git"
